@@ -1,0 +1,19 @@
+{
+  "name": "js_lab3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js"
+  },
+  "author": "Jenny Dcruz",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "mongo": "^0.1.0",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

@@ -1,0 +1,14 @@
+extends layout
+
+block layout-content
+  div.content
+    h1.page-title Add movie details
+    form(method="post", action="/movie/add/link")
+      div
+        label(for="movieName") Movie Name:
+        input(type="text", id="movieName", name="movieName", placeholder="e.g. Avatar")
+      div
+        label(for="year") Year:
+        input(type="number", max="2022", id="year", name="year", value=numLinks)
+      button(type="submit") Add movie to the list
+

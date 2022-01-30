@@ -1,0 +1,15 @@
+extends layout
+
+block layout-content
+  div.content
+    h1.page-title Edit movie details
+    form(method="post", action="/movie/edit/link")
+      input(type="hidden", name="id", value=editLink._id)
+      div
+        label(for="movieName") movieName:
+        input(type="text", id="movieName", name="movieName", placeholder="e.g. About", value=editLink.movieName)
+      div
+        label(for="year") year:
+        input(type="number", min="0", id="year", name="year", value=editLink.year)
+      button(type="submit") Update movie details
+

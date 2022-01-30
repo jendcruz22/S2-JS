@@ -1,0 +1,22 @@
+extends layout
+
+block layout-content
+  div.content
+    h1.page-title CRUD operations on movie names
+    a(href="/movie/add") + Add new movie
+    table
+      thead
+        tr
+          th Movie Details
+          th Operations
+      tbody
+        each link in links
+          tr
+            td #{link.movieName} | #{link.year}
+            td
+              form(action="/movie/edit")
+                input(type="hidden", name="linkId" value=link._id)
+                button(type="submit") Edit
+              form(action="/movie/delete")
+                input(type="hidden", name="linkId" value=link._id)
+                button(type="submit") Delete
