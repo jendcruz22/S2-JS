@@ -1,0 +1,26 @@
+bloc 
+doctype html 
+html 
+    head 
+        meta(charset="utf-8")
+        meta(name="viewport", 
+        content="width=device-width")
+        title #{title} | Pet Store Central
+        link(rel="stylesheet", type="text/css", href="/css/styles.css")
+    body 
+        header#header
+            div.header-content
+                h2#site-name 
+                    a(href="/") Pet Store Central 
+                nav#main-nav 
+                    ul 
+                        li 
+                            a(href="/") Home
+                        li
+                            a(href="/about") About 
+        main#main 
+            block layout-content 
+        footer#footer 
+            p &copy; Copyright HTTP5211, 2022.
+
+

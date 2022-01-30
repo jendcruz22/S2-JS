@@ -1,0 +1,35 @@
+extends layout
+
+block layout-content 
+    div.content
+        h1.page-title Welcome to Pet Store Central! 
+        p.title-content Get the best for your pets right here.
+    
+    div.container
+        //- REFERENCE: https://codepen.io/pebreo/pen/eWyEaV
+        .row
+            .col-1.col-sm-12 
+                h2.product-headings Leash
+                img(src="images/product1.jpeg", alt="Dog leash product image")
+                p Make walks with your pets comfortable and secure. Walk in or order online a leash from our diverse collection of styles, colours, and lengths. Get one for your pet today.
+                button 
+                    //- REFERENCE: https://pugjs.org/language/attributes.html
+                    //- IMAGE SOURCE: https://images.pexels.com/photos/10875173/pexels-photo-10875173.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
+                    a(href='https://pugjs.org/language/attributes.html') Buy now
+            .col-2.col-sm-12
+                h2.product-headings Bath products
+                img(src="images/product2.jpeg", alt="Pet bath products image")
+                p Bathe your pets with only the best products. Walk in or order online any of our pet bath products based on your pet's needs or the fragrances they desire. Get one today.
+                button 
+                    //- BUTTON REDIRECTS TO IMAGE SOURCE
+                    //- IMAGE SOURCE: https://images.pexels.com/photos/9705470/pexels-photo-9705470.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+                    a(href='https://images.pexels.com/photos/9705470/pexels-photo-9705470.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') Buy now
+            .col-3.col-sm-12 
+                h2.product-headings Toys
+                img(src="images/product3.jpeg", alt="Image of cat with a toy")
+                p Toys come in many varieties, including dog bones, balls, training aids, squeaky toys, etc. All of our pet toys serve a different purpose. Walk in or order online today.
+                button 
+                    //- BUTTON REDIRECTS TO IMAGE SOURCE
+                    //- IMAGE SOURCE: https://images.pexels.com/photos/3155894/pexels-photo-3155894.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
+                    a(href='https://images.pexels.com/photos/3155894/pexels-photo-3155894.jpeg?auto=compress&cs=tinysrgb&h=650&w=940') Buy now
+        

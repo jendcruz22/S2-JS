@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300&display=swap');
+
+body {
+    background-color: white;
+    color: black;
+}
+
+h1, h2, h3 {  
+    font-family: "Open Sans", sans-serif;
+}
+
+li, p, a {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkgreen;
+}
+
+#site-name {
+    text-align: center;
+}
+
+#main-nav ul {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+#main-nav ul li {
+    display: inline-flex;
+    padding: 10px;
+}
+
+.page-title {
+    text-align: center;
+}
+
+.about-desc {
+    text-align: center;
+}
+
+.title-content {
+    text-align: center;
+}
+
+.container {
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 2rem;
+}
+
+.row {
+    display: inline-flex;
+}
+     
+@media only screen and (max-width: 660px) {
+    .row {
+        display: block;
+    }
+}
+
+.col-1, .col-2, .col-3 {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.col-1 img, .col-2 img, .col-3 img {
+    width: 200px;
+    height: 300px;
+    display: block;
+    margin: auto;
+}
+
+.product-headings {
+    text-align: center;
+}
+
+button {
+    margin:auto;
+    display:block;
+    font-weight: bold;
+}
