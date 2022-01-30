@@ -1,0 +1,35 @@
+extends layout 
+
+block layout-content 
+    div.content 
+        h1.page-title Book your room
+        p.about-desc Fill the form below to book the most comfortable, clean, and safe room today.
+
+        //- FORM FOR HOTEL ROOM BOOKING
+        form#bookingForm(action="#" method="post" name="form_book") 
+            fieldset  
+                p Select room type: 
+                    select#roomType(name="roomType")
+                        option(value="single") Single Bedroom
+                        option(value="double") Double Bedroom
+                        option(value="queen") Queen Bedroom
+                        option(value="king") King Bedroom
+                        option(value="master") Master Bedroom
+                        option(value="connecting") Connecting Bedroom
+                p Your first name:
+                    input#fName(type="text" name="fName")
+                p Your last name:
+                    input#lName(type="text" name="lName")
+                p
+                    input(type="submit" value="Book room now" name="submit")
+        
+        //- THANK YOU MESSAGE FOR BOOKING CONFIRMATION
+        div#thanksMsg
+            h2 
+            | Thank you, 
+            span#fNameOutput 
+            | 
+            span#lNameOutput 
+            | . Your 
+            span#roomTypeOutput 
+            |  has been booked.

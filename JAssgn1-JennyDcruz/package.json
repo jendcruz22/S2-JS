@@ -1,0 +1,26 @@
+{
+  "name": "s2-js_assgn1",
+  "version": "1.0.0",
+  "description": "JS Assignment 1 by Jenny Dcruz",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jendcruz22/S2-JS_Assgn1.git"
+  },
+  "author": "Jenny Dcruz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jendcruz22/S2-JS_Assgn1/issues"
+  },
+  "homepage": "https://github.com/jendcruz22/S2-JS_Assgn1#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

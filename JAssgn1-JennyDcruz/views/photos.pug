@@ -1,0 +1,64 @@
+extends layout 
+
+block layout-content 
+    div.content 
+        h1.page-title Photos
+        p.about-desc Select the 'Book now' button under the image to reserve the most comfortable room for your stay.
+    div.container
+        //- ROOM DESCRIPTION REFERENCE: https://www.xotels.com/en/glossary/room-type
+        .row
+            //- ROOM 1: SINGLE ROOM
+            .col-1.col-sm-12 
+                h2.col-headings SINGLE ROOM
+                //- SOURCE: https://www.pexels.com/photo/bed-with-pillows-in-light-room-4992451/
+                img.roomDescImg(src="/public/images/single.jpeg", alt="Single room image")
+                p.roomDesc A room assigned to one person. May have one or more beds.
+                button 
+                    a(href='/booking') Book now
+            
+            //- ROOM 2: DOUBLE ROOM
+            .col-2.col-sm-12
+                h2.col-headings DOUBLE ROOM
+                //- SOURCE: https://images.pexels.com/photos/7258034/pexels-photo-7258034.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500
+                img.roomDescImg(src="/public/images/double.jpeg", alt="Double room image")
+                p.roomDesc A room assigned to two people. May have one or more beds.
+                button 
+                    a(href='/booking') Book now
+            
+            //- ROOM 3: QUEEN-SIZED ROOM
+            .col-3.col-sm-12 
+                h2.col-headings QUEEN-SIZED ROOM
+                //- SOURCE: https://images.pexels.com/photos/2873951/pexels-photo-2873951.jpeg?cs=srgb&dl=pexels-andrea-davis-2873951.jpg&fm=jpg
+                img.roomDescImg(src="/public/images/queen.jpeg", alt="Queen-sized room image")
+                p.roomDesc A room with a queen-sized bed. May be occupied by one or more people.
+                button 
+                    a(href='/booking') Book now
+        
+        .row
+            //- ROOM 4: KING-SIZED ROOM
+            .col-1.col-sm-12 
+                h2.col-headings KING-SIZED ROOM
+                //- SOURCE: https://images.pexels.com/photos/6207458/pexels-photo-6207458.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
+                img.roomDescImg(src="/public/images/king.jpeg", alt="King sized room image")
+                p.roomDesc A room with a king-sized bed. May be occupied by one or more people.
+                button 
+                    a(href='/booking') Book now
+            
+            //- ROOM 5: MASTER SUITE
+            .col-2.col-sm-12
+                h2.col-headings MASTER SUITE
+                //- SOURCE:https://images.pexels.com/photos/2747901/pexels-photo-2747901.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
+                img.roomDescImg(src="/public/images/master.jpeg", alt="Master Suite image")
+                p.roomDesc A parlour or living room connected to one or more bedrooms.
+                button 
+                    a(href='/booking') Book now
+            
+            //- ROOM 6: CONNECTING ROOMS
+            .col-3.col-sm-12 
+                h2.col-headings CONNECTING ROOMS
+                //- SOURCE: https://images.pexels.com/photos/271639/pexels-photo-271639.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+                img.roomDescImg(src="/public/images/connecting.jpeg", alt="Image of cat with a toy")
+                p.roomDesc Rooms with individual entrance doors from the outside and a connecting door between.
+                button 
+                    a(href="/booking") Book now
+        

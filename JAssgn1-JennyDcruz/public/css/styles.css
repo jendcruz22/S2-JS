@@ -1,0 +1,137 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300&display=swap');
+
+/* GENERAL STYLING */
+body {
+    background-color: white;
+    color: black;
+    margin: 10px 50px 10px 50px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+h1, h2, h3 {  
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+}
+
+li, p, a {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkgreen;
+    text-decoration: none;
+}
+
+/* HEADER STYLING */
+.header-content {
+    overflow: hidden;
+    background-color: white;
+    position: fixed; 
+    top: 0; 
+    width: 90%; 
+}
+
+#site-name {
+    text-align: center;
+}
+
+/* NAV STYLING */
+#main-nav {
+    background-color: white;
+}
+
+#main-nav ul {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+#main-nav ul li {
+    display: inline-flex;
+    padding: 10px;
+}
+
+.page-title {
+    text-align: center;
+    margin-top: 130px;
+    padding-top: 20px;
+    border-top: 0.5px solid grey;
+}
+
+/* ABOUT PAGE STYLING */
+.about-desc {
+    text-align: center;
+}
+
+.descCont {
+    margin: 0px 10px;
+    padding: 0px 10px;
+}
+
+.title-content {
+    text-align: center;
+}
+
+.container {
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 2rem;
+}
+
+.row {
+    display: inline-flex;
+}
+
+.about-img {
+    width: 100%;
+    height: auto;
+}
+
+.col-1, .col-2, .col-3 {
+    padding: 0px 10px;
+    margin: 10px;
+}
+
+/* PHOTOS PAGE STYLING */
+.roomDescImg {
+    width: 200px;
+    height: 300px;
+    display: block;
+    margin: auto;
+}
+
+.col-headings {
+    text-align: center;
+}
+
+.roomDesc {
+    text-align: center;
+}
+
+button {
+    margin:auto;
+    display:block;
+    font-weight: bold;
+}
+
+#thanksMsg {
+    display: none;
+    text-align: center;
+}
+
+/* RESPONSIVE CSS */
+@media only screen and (max-width: 660px) {
+    body {
+        margin: 10px 5px;
+    }
+
+    .row {
+        display: block;
+    }
+}

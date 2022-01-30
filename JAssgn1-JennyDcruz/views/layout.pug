@@ -1,0 +1,34 @@
+bloc 
+doctype html 
+html 
+    head 
+        meta(charset="utf-8")
+        meta(name="viewport", 
+        content="width=device-width, initial-scale=1, shrink-to-fit=no")
+
+        title #{title} | Ricata Hotels
+
+        //- STYLESHEETS
+        link(rel="stylesheet", type="text/css", href="/public/css/styles.css")
+
+        //- SCRIPTS
+        script(src="/public/js/scripts.js")
+    body 
+        header#header
+            div.header-content
+                h2#site-name 
+                    a(href="/") Ricata Hotels 
+                nav#main-nav 
+                    ul 
+                        li 
+                            a(href="/") Home
+                        li
+                            a(href="/photos") Photos 
+                        li
+                            a(href="/booking") Book a stay 
+        main#main 
+            block layout-content 
+        footer#footer 
+            p &copy; Copyright HTTP5211, 2022.
+
+
