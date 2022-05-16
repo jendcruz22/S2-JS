@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE people SYSTEM "people2.dtd">
+<people>
+  <person id="1" salutation="Mr" job="accountant">
+    <name>
+      <first>John</first>
+      <last>Doe</last>
+    </name>
+    <bio>This is an example of text containing <em>other elements</em>.</bio>
+  </person>
+  <person id="2" salutation="Mr" job="wizard">
+    <name>
+      <first>Harry</first>
+      <last>Potter</last>
+    </name>
+  </person>
+  <person id="3" salutation="Miss" job="engineer">
+    <name>
+      <first>Jane</first>
+      <last>Smith</last>
+    </name>
+  </person>
+</people>

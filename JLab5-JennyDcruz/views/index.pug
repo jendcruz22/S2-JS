@@ -1,0 +1,13 @@
+extends layout
+
+block layout-content
+h3 Top 10 trending movies
+  #table-wrapper
+    table#desc
+      tr 
+        th Movie Name
+        th Movie Description
+      each m in movies
+          tr
+            td #{m.movie.title}
+            td #{m.movie.overview}

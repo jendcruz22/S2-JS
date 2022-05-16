@@ -1,0 +1,11 @@
+extends layout
+block content
+    form(action="/libraryData")
+        div
+            select#branch(name='branch') required
+                each lib in libs
+                    - const id = lib.getAttribute('id');
+                    - const name = lib.querySelector('name').textContent;
+                    option(value=id) #{name}
+        div
+            button(type="submit") Go

@@ -1,0 +1,31 @@
+#main-nav ul{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#main-nav ul li {
+    display: inline;
+    margin: 0px;
+    padding: 0px 5px;
+}
+
+#table-wrapper {
+    display: flex;
+
+}
+#desc {
+    border-collapse: collapse;
+}
+th {
+    background-color: whitesmoke;
+    padding: 1em;
+    text-align: left;
+    border: 1px solid black;
+    padding: 1em;
+}
+
+td {
+    border: 1px solid black;
+    padding: 1em;
+}

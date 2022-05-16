@@ -1,0 +1,14 @@
+extends layout
+
+block layout-content
+  h3 Top 15 popular shows
+  #table-wrapper
+    table#desc
+      tr 
+        th TV Show
+        th Year
+      each s in shows
+          tr
+            td 
+              a(href="https://imdb.com/title/"+s.ids.imdb) #{s.title}
+            td #{s.year}

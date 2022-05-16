@@ -1,0 +1,26 @@
+<!-- ELEMENT_DEFINITION ELEMENT_NAME (CONTENT) -->
+<!ELEMENT people (person*)>
+<!ELEMENT person (name, bio?)> <!-- contents with a sequence (using commas), the order in which the element appears must be followed -->
+
+<!-- Attribute data types for DTDs are:
+- CDATA (character data)
+- ID (unique value following XML naming rules, so ID wouldn't work for id attribute in this case because it's a number)
+- IDREF (a reference to an ID)
+- ENTITY (you would probably not use this one)
+- NMTOKEN (string tokens, where multiple values are separated with spaces) -->
+
+<!-- ATTRIBUTES CAN BE #REQUIRED OR #IMPLIED -->
+<!ATTLIST person 
+  id CDATA #REQUIRED
+  salutation (Mr | Miss | Mrs | Lord | Lady | Sir) "Mr"
+  job CDATA #IMPLIED
+>
+
+<!ELEMENT name (first, middle?, last)>
+<!ELEMENT first (#PCDATA)>
+<!ELEMENT middle (#PCDATA)>
+<!ELEMENT last (#PCDATA)>
+
+<!ELEMENT bio (#PCDATA | em | strong)*>
+<!ELEMENT em (#PCDATA  | strong)*>
+<!ELEMENT strong (#PCDATA  | em)*>
